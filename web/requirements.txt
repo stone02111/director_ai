@@ -2,7 +2,9 @@
 # Install with: pip install -r requirements.txt
 
 # Core Web Framework
-gradio>=4.0.0
+# 固定 Gradio 5.x: app.py 使用 Blocks(theme=...)、gr.set_static_paths 等 Gradio 5 API，
+# Gradio 6.0 移除了这些参数会导致启动失败 (AttributeError / theme 参数报错)。
+gradio>=5.30.0,<6.0.0
 fastapi>=0.100.0
 uvicorn>=0.22.0
 

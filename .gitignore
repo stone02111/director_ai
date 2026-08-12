@@ -1,0 +1,6 @@
+# CodeGraph 本地索引缓存
+.codegraph/
+
+# IDE
+.idea/
+.vscode/
